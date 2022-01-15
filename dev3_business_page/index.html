@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+
+      
+        .dev3-business-section {
+            background-color: #f3f3f3;
+            color: #f51414;
+            height: 500px;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+
+        }
+
+        .dev3-business-section:hover {
+            background-color: black;
+
+            visibility: visible;
+            opacity: 1;
+            transition: all 1s ease-in;
+
+       
+        }
+
+        .dev3-business-section:hover .tdd-cycle{
+                color: white;
+            }
+
+
+        .top-circle {
+            display: block;
+            text-align: -webkit-center;
+}
+        
+
+        .top-circle .circle:hover {
+            
+            background-color: red;
+        }
+
+
+        .top-circle .circle:hover  p{
+            /* display: block; */
+           color:rgb(39, 22, 194);
+        }
+
+        .left-circle .circle:hover {
+            background-color: rgb(161, 154, 154);
+        }
+
+        .right-circle .circle:hover {
+            background-color: green;
+        }
+
+
+
+
+        .circlesbox {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            /* padding-top: 100px; */
+        }
+
+
+
+        .circle {
+            position: relative;
+            z-index: 2;
+            border: 1px solid rgb(148, 148, 148);
+            background: white;
+            /* box-shadow: 0 0 0 20px #fff; */
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            font-size: 17px;
+            color: #000;
+            text-align: center;
+        }
+
+        .tdd-cycle{
+            text-align: center;
+            font-size: 30px;
+    padding:   60px 0  5px 0;
+    color: black;
+        }
+    </style>
+
+
+
+    <div class="dev3-business-section">
+        <div class="dev3-tdd-cycle">
+            <div class="top-circle">
+              <p class="top-text" >1. Right a text that fails</p>
+                    <div class=" circle">
+                        RED
+                    </div>
+              
+                
+            </div>
+
+            <div class="tdd-cycle">
+               <h2>TDD CYCLE</h2> 
+            </div>
+            <div class="circlesbox">
+                <div class="left-circle">
+                    <p class="left-text" style="display: none;">2. Eliminate redundancy</p>
+                    <div class="circle">
+                        REFACTOR
+                    </div>
+                </div>
+
+                <div class="right-circle">
+                    <p class="right-text" style="display: none;">3. Make the code work</p>
+                    <div class="circle">
+                        GREEN
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

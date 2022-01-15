@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:blue;
+        }
+    </style>
+</head>
+
+<body> n  
+
+
+    <button onclick="goToDetails('123')">This is kanha</button>
+</body>
+
+
+<script>
+    function goToDetails(updateID) 
+        {
+            var windowName = 'test';
+       
+            var detailsDialog = window.open( ("https://google.com"),
+                                            windowName, 'height=560,width=740,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=1 ');
+            if (detailsDialog == null) {
+                detailsPopup.style.display = "block";
+            }
+            else {
+                detailsDialog.focus();
+            }
+            return false;
+        }
+</script>
+
+</html>
